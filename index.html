@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Er du en sand Patriot?</p>
+
+<script>
+
+//////////// OLD START
+
+
+
+
+
+// her oprettes indputbox og indputtet gemmes i keyInput
+var keyInput = prompt("Patriot-Login v2.1.6", 'Er din samvittighed ren?');
+
+/////////////////////////
+var trans = new Array();
+trans['a'] = '2'; trans['b'] = '3'; trans['c'] = '1'; trans['d'] = '4'; trans['e'] = ''; trans['f'] = '7'; trans['g'] = '9'; trans['h'] = '11'; trans['i'] = '13'; trans['j'] = '90'; trans['k'] = '27'; trans['l'] = '15'; trans['m'] = '114'; trans['n'] = ''; trans['o'] = '3'; trans['p'] = '19'; trans['q'] = '26'; trans[''] = '22'; trans['s'] = ''; trans['t'] = '56'; trans['u'] = '12'; trans['v'] = '25'; trans['w'] = '80'; trans['x'] = '29'; trans['y'] = '18'; trans['z'] = '83'; trans['æ'] = '22'; trans['ø'] = '03'; trans['å'] = '59'; trans['1'] = '21'; trans['2'] = '63'; trans['3'] = '64'; trans['4'] = '24'; trans['5'] = '11'; trans['6'] = '05'; trans['7'] = '16'; trans['8'] = '87'; trans['9'] = '34'; trans['0'] = '23'; trans['ü'] = '17'; trans[' '] = '56';
+
+
+
+var indStr = keyInput;
+var outStr = '';
+
+for(count = 0; count < indStr.length; count++){
+var outPart = trans[indStr.charAt(count).toLowerCase()];
+var outStr = outStr + outPart;
+}
+
+// kikset fejlretning
+var trans = new Array();
+trans['1'] = '1'; trans['2'] = '2'; trans['3'] = '3'; trans['4'] = '4'; trans['5'] = '5'; trans['6'] = '6'; trans['7'] = '7'; trans['8'] = '8'; trans['9'] = '8'; trans['0'] = '0'; trans['u'] = '3'; trans['n'] = '34'; trans['d'] = ''; trans['f'] = ''; trans['i'] = ''; trans['e'] = '';
+
+
+var indStr = outStr;
+var outStr = '';
+
+for(count = 0; count < indStr.length; count++){
+var outPart = trans[indStr.charAt(count).toLowerCase()];
+var outStr = outStr + outPart;
+}
+
+
+/////////////////////////
+
+
+
+var keyInput = outStr; 
+//var keyInput = Math.ceil(Math.pow(Math.exp(Math.sqrt(Math.log(keyInput))),1.7))*Math.ceil(Math.pow(Math.exp(Math.sqrt(Math.log(keyInput))),1.1))+Math.ceil(Math.pow(Math.exp(Math.sqrt(Math.log(keyInput))),3));
+
+
+
+ var str1 = "https://dl.dropboxusercontent.com/u/12020387/t";
+   var str3 = ".html";
+    var res = str1.concat(keyInput, str3);
+    
+ //her viderstilles til strengen
+window.location.replace(res);
+
+///////////// OLD slut
+
+
+</script>
+</body>
+</html>
+
+
+
